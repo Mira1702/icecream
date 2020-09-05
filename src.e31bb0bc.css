@@ -78,7 +78,7 @@ h1 {
 
 .logo {
   margin-right: 60px;
-  fill: #D41443;
+  fill: #d41443;
 }
 @media screen and (min-width: 768px) {
   .logo {
@@ -96,6 +96,7 @@ h1 {
   z-index: 100;
   background-color: transparent;
   border: none;
+  outline: none;
 }
 @media screen and (min-width: 1280px) {
   .menu-btn {
@@ -132,6 +133,7 @@ h1 {
     line-height: 21px;
     cursor: pointer;
     color: #d41443;
+    outline: none;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1280px) {
@@ -184,6 +186,7 @@ h1 {
   text-align: center;
   cursor: pointer;
   color: #d41443;
+  outline: none;
 }
 @media screen and (min-width: 1280px) {
   .navigation-button {
@@ -777,6 +780,7 @@ h1 {
   text-align: center;
   color: #d41443;
   cursor: pointer;
+  outline: none;
 }
 .how-btn-read-more-text:focus, .how-btn-read-more-text:hover {
   background: #ecebeb;
@@ -1459,7 +1463,6 @@ h1 {
   font-size: 12px;
   line-height: 18px;
   border-radius: 22px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: #ffffff;
   margin-bottom: 10px;
   cursor: pointer;
@@ -1485,25 +1488,44 @@ h1 {
   }
 }
 
+@media screen and (min-width: 320px) {
+  .footer-container {
+    width: 320px;
+    border: none;
+  }
+}
+.list {
+  list-style-type: none;
+}
+
 .footer {
-  /*max-width: 320px;*/
+  display: flex;
+  /* padding-left: 20px;
+  padding-right: 20px;*/
   background-color: #fff5f6;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .footer-container {
-  max-width: 320px;
+  /*max-width: 280px;*/
   padding-top: 65px;
   display: flex;
+}
+
+.footer-section {
+  justify-content: space-between;
+  margin: auto;
+}
+
+.moto-text {
+  justify-content: flex-start;
   padding-left: 20px;
-  padding-right: 20px;
-  /*background-color: #fff5f6;
-  background-size: auto;
-  background-repeat: no-repeat;*/
-  margin: 0 auto;
+  padding-right: 66px;
 }
 
 .moto-text-1 {
-  font-family: Titan One;
+  font-family: "Titan One", cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1514,7 +1536,7 @@ h1 {
 }
 
 .moto-text-2 {
-  font-family: Titan One;
+  font-family: "Titan One", cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 34px;
@@ -1529,6 +1551,8 @@ h1 {
   padding-top: 46px;
   justify-content: flex-end;
   text-decoration: none;
+  /* padding-left: 30px;*/
+  padding-bottom: 40px;
   text-align: end;
 }
 
@@ -1538,27 +1562,45 @@ h1 {
 
 .social-media-list {
   display: flex;
-  justify-content: flex-end;
+  padding-left: 147px;
+  padding-right: 20px;
+}
+
+.social-media-list_item-link {
+  display: block;
+}
+
+.social-media-list_item-link:hover .social-media-list_item-svg,
+.social-media-list_item-link:focus .social-media-list_item-svg {
+  fill: #d41342;
 }
 
 .social-media-list_item:not(:last-child) {
   padding-right: 24px;
+}
+
+.social-media-list_item-svg {
+  fill: #fea5bb;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-media-list_item-svg:hover, .social-media-list_item-svg:focus {
+  fill: #d41443;
 }
 
 .contacts-text {
-  font-family: DM Sans;
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 186%;
   text-align: right;
   color: #000000;
-  padding-right: 5px;
+  padding-left: 70px;
+  padding-right: 20px;
 }
 
 .tel {
-  font-family: DM Sans;
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -1570,15 +1612,12 @@ h1 {
 
 .copywrite {
   display: block;
-  padding-top: 65px;
-  padding-left: 79px;
-  padding-right: 91px;
   padding-bottom: 25px;
-  width: 150px;
+  padding-top: 22px;
   height: 42px;
   left: 79px;
   top: 7049px;
-  font-family: DM Sans;
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -1587,41 +1626,36 @@ h1 {
   color: #907e82;
   align-items: center;
   box-sizing: content-box;
+  border-top: 1px solid #e1e1e1;
 }
 
 .copywrite:before {
   content: "©";
 }
 
-/*.social-media-list_item-link:hover,
-.social-media-list_item-link:focus {
-  color: #d41443;
-}
-.social-media-list_item-link:hover .social-media-list_item-svg {
-  fill: #d41443;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-media-list_item-link:hover .social-media-list_item-svg {
-  fill: #d41443;
-}*/
 @media screen and (min-width: 768px) {
+  /*.footer {
+    justify-content: space-between;*/
   .footer-container {
     width: 768px;
     margin-left: 0;
     margin-right: 0;
+    box-sizing: content-box;
+    padding-left: 20px;
+    /*.contacts {
+      width: 320px;
+    }*/
   }
   .footer-container .contacts-block-section {
     display: flex;
-    /*justify-content: space-between;*/
-  }
-  .footer-container .contacts {
-    width: 320px;
+    padding-bottom: 80px;
+    /*justify-content: space-around;*/
   }
 
-  .moto-text {
-    padding-right: 100px;
-  }
-
+  /*.moto-text {
+    /*padding-right: 60px;
+    padding-left: 20px;
+  }*/
   .moto-text-1 {
     width: 472px;
     height: 34px;
@@ -1647,7 +1681,10 @@ h1 {
   }
 
   .social-media-list {
+    /*padding-left: 198px;*/
     margin-top: 0;
+    justify-content: flex-end;
+    padding-right: 52px;
   }
 
   .contacts-text {
@@ -1658,6 +1695,8 @@ h1 {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.02em;
+    padding-left: 0px;
+    padding-right: 52px;
   }
 
   .tel {
@@ -1671,24 +1710,20 @@ h1 {
   }
 
   .copywrite {
-    width: fit-content;
     padding-right: 0;
-    padding-left: 230px;
+    padding-top: 30px;
+    box-sizing: content-box;
   }
-
-  /*.footer {
-    max-width: 768px;*/
 }
-@media screen and (min-width: 1200px) {
-  .footer-container {
-    /*justify-content: space-between;*/
-    width: 1200px;
+@media screen and (min-width: 1280px) {
+  .footer {
+    margin: auto;
     padding-left: 115px;
     padding-right: 115px;
   }
 
-  .contacts-block-section {
-    width: 1200px;
+  .footer-section {
+    margin: auto;
   }
 
   .moto-text {
@@ -1702,6 +1737,15 @@ h1 {
     width: 474px;
   }
 
+  .social-media-list {
+    padding-right: 0;
+  }
+
+  .contacts-block-section {
+    width: 1010px;
+    justify-content: space-between;
+  }
+
   .contacts-text {
     width: 319px;
     height: 30px;
@@ -1710,6 +1754,7 @@ h1 {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.02em;
+    padding-right: 0;
   }
 
   .tel {
@@ -1722,11 +1767,8 @@ h1 {
   }
 
   .copywrite {
-    padding-left: 502px;
+    padding-top: 95px;
   }
-
-  /*.footer {
-    width: 1200px;*/
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
