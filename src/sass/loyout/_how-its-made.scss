@@ -46,9 +46,11 @@
   color: #D41443;
   cursor: pointer;
   outline: none;
+  transition: background-color 250ms linear;
   &:focus,
   &:hover {
     background: #ECEBEB;
+    
   }
 }
 .how-list-item {
