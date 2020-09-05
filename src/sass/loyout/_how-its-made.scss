@@ -5,7 +5,7 @@
   background: #FFF5F6;
 }
 .how-title {
-  font-family: Titan One;
+  font-family: $secondary-font;
   font-style: normal;
   font-weight: normal;
   text-align: center;
@@ -15,7 +15,7 @@
   margin-bottom: 15px;
 }
 .how-subtitle {
-  font-family: Titan One;
+  font-family: $secondary-font;
   font-style: normal;
   font-weight: normal;
   text-align: center;
@@ -24,19 +24,19 @@
   color: #D41443;
 }
 .how-text-bold {
-  font-family: DM Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 500;
   color: #000000;
 }
 .how-text {
-  font-family: DM Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 500;
   color: #907E82;
 }
 .how-btn-read-more-text {
-  font-family: DM Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -54,7 +54,7 @@
   }
 }
 .how-list-item {
-  font-family: Titan One;
+  font-family: $secondary-font;
   font-style: normal;
   font-weight: normal;
   letter-spacing: 0.04em;
@@ -62,7 +62,7 @@
   color: #D41443;
 }
 .how-list-text {
-  font-family: DM Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: bold;
   color: #000000;
