@@ -80,6 +80,11 @@
   -moz-transition: background-color 0.2s linear;
   -o-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
+  &:hover {
+    background-color: transparent;
+    background-image: url(../images/icon-home.svg);
+    background-repeat: no-repeat;
+  }
 }
 
 #slideshow-wrap label:not(.arrows):active {
@@ -117,11 +122,11 @@
 }
 
 #slideshow-wrap input[type='radio']#button-2:checked ~ #slideshow-inner > ul {
-  left: -100%;
+  left: -200%;
 }
 
 #slideshow-wrap input[type='radio']#button-3:checked ~ #slideshow-inner > ul {
-  left: -200%;
+  left: -100%;
 }
 
 .description {
