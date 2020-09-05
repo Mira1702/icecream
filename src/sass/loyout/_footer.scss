@@ -51,17 +51,17 @@
 .social-media-list_item-link {
   display: block;
 }
-.social-media-list_item-link:hover .social-media-list_item-svg,
-.social-media-list_item-link:focus .social-media-list_item-svg {
-  fill: #d41342;
-  transition: fill 250ms linear;
-}
 
 .social-media-list_item:not(:last-child) {
   padding-right: 24px;
 }
 .social-media-list_item-svg {
+  transition: fill 250ms linear;
   fill: #fea5bb;
+}
+.social-media-list_item-svg:hover,
+.social-media-list_item-svg:focus {
+  fill: #d41342;
 }
 
 .contacts-text {
