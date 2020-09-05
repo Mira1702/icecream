@@ -4,14 +4,17 @@
 
 .location-container {
   position: relative;
-  padding: 1380px 50px 113px 50px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 320px;
+  padding: 1380px 15px 113px 15px;
   @media screen and (min-width: 768px) {
-    padding: 520px 50px 158px 50px;
-    margin: -10px;
+    max-width: 768px;
+    padding: 520px 15px 158px 15px;
   }
   @media screen and (min-width: 1280px) {
-    padding: 480px 50px 165px 50px;
-    margin: -15px;
+    max-width: 1280px;
+    padding: 480px 15px 165px 15px;
   }
 }
 
