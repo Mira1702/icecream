@@ -1,17 +1,9 @@
-@media screen and (min-width: 320px) {
-  .footer-container {
-    border: none;
-  }
-}
-
 .list {
   list-style-type: none;
 }
 
 .footer {
   background-color: #fff5f6;
-  background-size: auto;
-  background-repeat: no-repeat;
 }
 
 .footer-container {
@@ -157,13 +149,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .footer {
-    margin: auto;
-  }
-  .footer-section {
-    margin: auto;
-  }
-
   .motto-text {
     display: inline-grid;
     padding-left: 0px;
