@@ -2,7 +2,7 @@
   margin: 0 auto;
 }
 .how-section-background {
-  background: #fff5f6;
+  background-color: $bg-color;
 }
 .how-title {
   font-family: $secondary-font;
@@ -11,7 +11,7 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffa5ba;
+  color: $subtitle-color;
   margin-bottom: 15px;
 }
 .how-subtitle {
@@ -21,7 +21,7 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: $accent-color;
 }
 .how-text-bold {
   font-family: $main-font;
@@ -43,13 +43,13 @@
   line-height: 1.285;
   align-items: center;
   text-align: center;
-  color: #d41443;
+  color: $accent-color;
   cursor: pointer;
   outline: none;
   transition: background-color 250ms linear;
   &:focus,
   &:hover {
-    background: #ecebeb;
+    background: $hover-button;
   }
 }
 .how-list-item {
@@ -58,7 +58,7 @@
   font-weight: normal;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: $accent-color;
 }
 .how-list-text {
   font-family: $main-font;
@@ -104,7 +104,7 @@
   .how-btn-read-more {
     width: 176px;
     height: 44px;
-    background: #ffffff;
+    background: $main-text-color;
     border-radius: 22px;
     border: none;
   }
@@ -190,7 +190,7 @@
 }
 @media screen and (min-width: 1200px) {
   .how-container {
-    width: 1280px;
+    max-width: 1280px;
     padding-top: 125px;
     padding-left: 15px;
     padding-right: 15px;
@@ -209,7 +209,6 @@
     height: 433px;
   }
   .how-text-bold-section {
-    width: 463px;
     margin-left: 74px;
     margin-right: 0px;
     margin-bottom: 35px;

@@ -8,7 +8,7 @@
   font-family: $secondary-font;
   font-weight: 400;
   text-transform: uppercase;
-  color: #ffa5ba;
+  color: $subtitle-color;
 }
 
 .products-title {
@@ -16,7 +16,7 @@
   font-weight: 400;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: $accent-color;
 }
 
 .products-list-item {
@@ -24,7 +24,7 @@
   border-radius: 24px;
 
   &.icecream {
-    background-color: #ffb8ca;
+    background-color: $hero-bg-color;
   }
 
   &.icecoffee {
@@ -40,7 +40,7 @@
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.04em;
-    color: #ffffff;
+    color: $main-text-color;
   }
 }
 
@@ -55,7 +55,7 @@
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: $main-text-color;
 }
 
 .products-list-item-icon {
@@ -65,11 +65,11 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #fff;
-  fill: #d41443;
+  background-color: $main-text-color;
+  fill: $accent-color;
 }
 .products-dots {
-  fill: #fff;
+  fill: $main-text-color;
 }
 @media screen and (max-width: 767px) {
   .products-container {
